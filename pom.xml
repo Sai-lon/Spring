@@ -17,6 +17,7 @@
         <module>ch07</module>
         <module>ch08</module>
         <module>ch09</module>
+        <module>ex</module>
 
     </modules>
     <packaging>pom</packaging>
@@ -53,14 +54,12 @@
     </build>
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.9.RELEASE</version>
         </dependency>
-
 
         <!--junit单元测试-->
         <dependency>
@@ -79,6 +78,10 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.6</version>
         </dependency>
+
+
+
+
     </dependencies>
 
 

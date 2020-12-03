@@ -14,7 +14,6 @@ public class StuServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
-
     @Override
     public void add() {
         System.out.println("stu");
