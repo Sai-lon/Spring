@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <bean id="user" class="edu.nf.ch06.Users">
+<!--            构造方法注入,注入值-->
+<!--            <constructor-arg name="userName" value="user1"/>-->
+<!--            <constructor-arg name="age" value="20"/>-->
+<!--            <constructor-arg name="address">-->
+<!--                &lt;!&ndash;注入list集合&ndash;&gt;-->
+<!--                 <list>-->
+<!--                     <value>珠海</value>-->
+<!--                     <value>深圳</value>-->
+<!--                 </list>-->
+<!--            </constructor-arg>-->
+
+<!--            <constructor-arg name="card">-->
+<!--                <map>-->
+<!--                    &lt;!&ndash;一个entity代表一个键值对&ndash;&gt;-->
+<!--                    <entry key="建行" value="324543243435447573"></entry>-->
+<!--                    <entry key="工行" value="347022033225447573"></entry>-->
+<!--                </map>-->
+<!--            </constructor-arg>-->
+
+<!--            &lt;!&ndash;注入properties&ndash;&gt;-->
+<!--            <constructor-arg name="prop">-->
+<!--                 <props>-->
+<!--                     <prop key="擦拭">5455244</prop>-->
+<!--                     <prop key="cccc">244447</prop>-->
+<!--                 </props>-->
+<!--            </constructor-arg>-->
+
+            <!--set方法注入-->
+            <property name="userName" value="user2"/>
+            <property name="age" value="25"/>
+            <property name="address">
+                <list>
+                    <value>珠海</value>
+                </list>
+            </property>
+
+            <property name="card">
+                <map>
+                     <entry key="工行" value="57545537375"/>
+                    <entry key="建行" value="57545537375"/>
+                </map>
+            </property>
+
+            <property name="prop">
+                 <props>
+                     <prop key="aa">41442424</prop>
+                     <prop key="bb">45795829</prop>
+                 </props>
+            </property>
+        </bean>
+</beans>
