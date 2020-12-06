@@ -16,6 +16,9 @@
         <module name="ch02" />
         <module name="ex" />
         <module name="ch01" />
+        <module name="ch12" />
+        <module name="ch11" />
+        <module name="ch10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
