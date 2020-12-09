@@ -19,6 +19,7 @@ public class SpringConfig {
      * 使用bean注解来装配
      * 方法名默认为bean的id
      * 可以通过name属性重新自定义
+     *
      */
     @Bean(name = "dao",initMethod = "init",destroyMethod = "destroy")
     //@Scope注解可以声明在方法上
